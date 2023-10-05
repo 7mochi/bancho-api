@@ -1,17 +1,17 @@
 package lt.ekgame.bancho.test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import lt.ekgame.bancho.api.packets.Packet;
 import lt.ekgame.bancho.client.RateLimiter;
 import lt.ekgame.bancho.client.impl.RateLimiterImpl;
 
-public class TestRateLimiter {
+class TestRateLimiter {
 
 	@Test
-	public void test() {
+	void test() {
 		int numPackets = 10;
 		int delay = 1000;
 		long startTime = System.currentTimeMillis();
